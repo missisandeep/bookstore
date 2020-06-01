@@ -15582,8 +15582,8 @@ input[type="number"] {
     display: block;
     text-transform: capitalize;
     overflow: hidden;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 500;
     margin-bottom: 18px; }
     .product-card h3 a:hover {
       color: #62ab00; }
