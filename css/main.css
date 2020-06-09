@@ -59,6 +59,8 @@
 |	|___ faq
 
 
+
+
 ******************************/
 /*=== Media Query ===*/
 /*=== MEDIA QUERY with max width===*/
@@ -15274,6 +15276,10 @@ input[type="number"] {
 .border-bottom {
   border-bottom: 1px solid #ebebeb; }
 
+  .border-bottom-dotted{
+    border-bottom: 1px dotted #ebebeb;
+  }
+
 .overflow-image {
   overflow: hidden;
   width: 100%;
@@ -15327,7 +15333,7 @@ input[type="number"] {
         padding-bottom: 31px; } }
   .section-title--bordered {
     position: relative;
-    border-bottom: 1px solid #e5e5e5; }
+    border-bottom: 0px solid #e5e5e5; }
     .section-title--bordered h2 {
       position: relative;
       padding-bottom: 10px; }
@@ -15566,7 +15572,9 @@ input[type="number"] {
 .product-card {
   text-align: center; }
   .product-card .product-header {
-    padding: 0 15px; }
+    padding: 0 15px;
+    min-height: 80px;
+     }
   .product-card .author {
     font-size: 14px;
     font-weight: 400;
@@ -15756,7 +15764,7 @@ input[type="number"] {
       font-size: 14px; } }
   @media (min-width: 1200px) {
     .price {
-      font-size: 18px; } }
+      font-size: 15px; } }
   .price-old {
     color: #999999;
     text-decoration: line-through;
@@ -15849,7 +15857,7 @@ input[type="number"] {
 
 .slider-border-single-row .single-slide .product-card--body {
   position: relative;
-  padding: 1px; }
+  padding: 0px; }
   .slider-border-single-row .single-slide .product-card--body::before {
     position: absolute;
     content: "";
@@ -15882,7 +15890,7 @@ input[type="number"] {
 
 .slider-border-multiple-row .single-slide .product-card--body {
   position: relative;
-  padding: 1px; }
+  padding: 0px; }
   .slider-border-multiple-row .single-slide .product-card--body::before {
     position: absolute;
     content: "";
@@ -16107,7 +16115,7 @@ input[type="number"] {
   [class*="hero-slider"] .slick-dots {
     position: absolute;
     bottom: 0;
-    margin-bottom: 20px;
+    margin-bottom: 120px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -16722,9 +16730,9 @@ input[type="number"] {
     ul.main-menu > li.menu-item > a {
       margin-left: 10px;
       margin-right: 10px;
-      padding-top: 25px;
-      padding-bottom: 25px;
-      font-size: 16px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 14px;
       text-transform: uppercase;
       font-weight: 400;
       color: #333; } }
@@ -17742,7 +17750,7 @@ input[type="number"] {
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 15px;
-    border: 2px solid #e5e5e5; }
+    border: 0px solid #e5e5e5; }
     .testimonial-card .testimonial-body article {
       position: relative;
       padding-top: 30px; }
@@ -21514,3 +21522,20 @@ p.form-messege {
           transform: rotate(90deg); }
   .accordion .card .card-body {
     padding: 0 30px 30px; }
+
+
+/*code changes by me*/
+.site-footer{
+    background-color: #ddd;
+    padding-top: 86px;
+}
+.background-color-onimage{
+    background-color: #fff;
+    padding: 20px 0px 20px 0px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px;
+}
+.header-max-height{
+      max-height: 350px;
+    overflow: hidden;
+}
