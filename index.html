@@ -57,8 +57,8 @@
                             <div class="main-navigation flex-lg-right">
                                 <div class="cart-widget">
                                     <div class="login-block">
-                                        <a href="javascript:void(0)" data-target="#loginModal" class="font-weight-bold" >Login</a> 
-                                        <span>or</span><a href="login-register">Register</a>
+                                        <a href="javascript:void(0);" class="font-weight-bold" data-toggle="modal" data-target="#loginModal" >Login</a> 
+                                        <span>or</span><a href="javascript:void(0);" data-toggle="modal" data-target="#registration-model" >Register</a>
                                     </div>
                                     <div class="cart-block">
                                         <div class="cart-total">
@@ -89,9 +89,9 @@
                                             </div>
                                             <div class=" single-cart-block ">
                                                 <div class="btn-block">
-                                                    <a href="cart" class="btn">View Cart <i
+                                                    <a href="cart.html" class="btn">View Cart <i
                                                             class="fas fa-chevron-right"></i></a>
-                                                    <a href="checkout" class="btn btn--primary">Check Out <i
+                                                    <a href="checkout.html" class="btn btn--primary">Check Out <i
                                                             class="fas fa-chevron-right"></i></a>
                                                 </div>
                                             </div>
@@ -124,19 +124,19 @@
                                 <ul class="main-menu menu-right li-last-0">
                                     
                                     <li class="menu-item">
-                                        <a href="index">Home</a>
+                                        <a href="index.html">Home</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="index">Catalog</a>
+                                        <a href="shop-list.html">Catalog</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="index">Bookish - Blog</a>
+                                        <a href="blog.html">Bookish - Blog</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="index">My Library</a>
+                                        <a href="my-acount.html">My Library</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="contact">Contact Us</a>
+                                        <a href="contact.html">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -193,24 +193,20 @@
                         <nav class="off-canvas-nav">
                            <ul class="main-menu menu-right main-menu--white li-last-0">
                                     
-                                    <li class="menu-item ">
-                                        <a href="index">Home</a>
+                                   <li class="menu-item">
+                                        <a href="index.html">Home</a>
                                     </li>
-                                    <hr>
                                     <li class="menu-item">
-                                        <a href="index">Catalog</a>
+                                        <a href="shop-list.html">Catalog</a>
                                     </li>
-                                    <hr>
                                     <li class="menu-item">
-                                        <a href="index">Bookish - Blog</a>
+                                        <a href="blog.html">Bookish - Blog</a>
                                     </li>
-                                    <hr>
                                     <li class="menu-item">
-                                        <a href="index">My Library</a>
+                                        <a href="my-acount.html">My Library</a>
                                     </li>
-                                    <hr>
                                     <li class="menu-item">
-                                        <a href="contact">Contact Us</a>
+                                        <a href="contact.html">Contact Us</a>
                                     </li>
                                 </ul>
                         </nav>
@@ -260,19 +256,19 @@
                              <ul class="main-menu menu-right li-last-0">
                                     
                                     <li class="menu-item">
-                                        <a href="index">Home</a>
+                                        <a href="index.html">Home</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="index">Catalog</a>
+                                        <a href="shop-list.html">Catalog</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="index">Bookish - Blog</a>
+                                        <a href="blog.html">Bookish - Blog</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="index">My Library</a>
+                                        <a href="my-acount.html">My Library</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="contact">Contact Us</a>
+                                        <a href="contact.html">Contact Us</a>
                                     </li>
                             </ul>
                         </div>
@@ -349,13 +345,19 @@
                     ]'>
                     <div class="single-slide">
                         <div class="product-card">
-                            
+                             <div class="product-header">
+                                <a href="#" class="author">
+                                    Jpple
+                                </a>
+                                <h3><a href="product-details">Turn Your BOOK Into High Machine</a>
+                                </h3>
+                            </div>
                             <div class="product-card--body">
                                 <div class="card-image">
                                     <img src="image/products/product-2.jpg" alt="">
                                     <div class="hover-contents">
                                         <a href="product-details" class="hover-image">
-                                            <img src="image/products/product-1.jpg" alt="">
+                                            <img loading="lazy" alt="..." src="image/products/product-1.jpg" alt="">
                                         </a>
                                         <div class="hover-btns">
                                             <a href="cart" class="single-btn">
@@ -371,8 +373,7 @@
                                 </div>
 
                                 <div class="price-block">
-                                <h3><a href="product-details">Revolutionize Your BOOK With</a></h3>
-
+                              
                                     <span class="price">Rs - 51.20</span>
                                     <del class="price-old">Rs - 51.20</del>
                                     <span class="price-discount">20%</span>
@@ -2530,74 +2531,120 @@
 
 
 
-        <div class="modal fade modal-quick-view" id="loginModal" tabindex="-1" role="dialog"
-            aria-labelledby="loginModal" aria-hidden="true">
+
+         <!-- Modal -->
+        <div class="modal fade modal-quick-view lgoin-model" id="loginModal" tabindex="-1" role="dialog"
+            aria-labelledby="quickModal" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                   <div class="container">
-                <div class="row">
-
-                    <div class="col-sm-12 col-md-9 col-lg-9 col-xs-12">
-                        <form action="https://demo.hasthemes.com/pustok-preview/pustok/">
-                            <div class="login-form">
-                                <h4 class="login-title">Returning Customer</h4>
-                                <p><span class="font-weight-bold">I am a returning customer</span></p>
-                                <div class="row">
-                                    <div class="col-md-12 col-12 mb--15">
-                                        <label for="email">Enter your email address here...</label>
-                                        <input class="mb-0 form-control" type="email" id="email1"
-                                            placeholder="Enter you email address here...">
-                                    </div>
-                                    <div class="col-12 mb--20">
-                                        <label for="password">Password</label>
-                                        <input class="mb-0 form-control" type="password" id="login-password" placeholder="Enter your password">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <a href="#" class="btn btn-outlined">Login</a>
-                                        <a href="#" class="btn btn-outlined pull-right">Forgote Password</a>
-                                    </div>
+                    <button type="button" class="close modal-close-btn ml-auto" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="product-details-modal login-background-image">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <!-- <img src="image/bg-images/login_image.png"> -->
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-sm-12 col-md-3 col-xs-12 col-lg-3 mb--30 mb-lg--0">
-
-                    </div>
-<!-- 
-                    <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb--30 mb-lg--0">
-                      
-                        <form action="#">
-                            <div class="login-form">
-                                <h4 class="login-title">New Customer</h4>
-                                <p><span class="font-weight-bold">I am a new customer</span></p>
-                                <div class="row">
-                                    <div class="col-md-12 col-12 mb--15">
-                                        <label for="email">Full Name</label>
-                                        <input class="mb-0 form-control" type="text" id="name"
-                                            placeholder="Enter your full name">
-                                    </div>
-                                    <div class="col-12 mb--20">
-                                        <label for="email">Email</label>
-                                        <input class="mb-0 form-control" type="email" id="email" placeholder="Enter Your Email Address Here..">
-                                    </div>
-                                    <div class="col-lg-6 mb--20">
-                                        <label for="password">Password</label>
-                                        <input class="mb-0 form-control" type="password" id="password" placeholder="Enter your password">
-                                    </div>
-                                    <div class="col-lg-6 mb--20">
-                                        <label for="password">Repeat Password</label>
-                                        <input class="mb-0 form-control" type="password" id="repeat-password" placeholder="Repeat your password">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <a href="#" class="btn btn-outlined">Register</a>
-                                    </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <form action="https://demo.hasthemes.com/pustok-preview/pustok/">
+                                        <div class="login-form">
+                                            <h4 class="login-title">Welcome back !</h4>
+                                            <p>For a better experience please Login, or Signup if you haven’t already. Your registration on the old website will not be valid in the new website. To use the features included in the new website, both new and old candidates will have to re-register.</p>
+                                            <div class="row">
+                                                <div class="col-md-12 col-12 mb--15">
+                                                    <!-- <label for="email">Enter your email address here...</label> -->
+                                                    <input class="mb-0 form-control" type="email" id="email1"
+                                                        placeholder="Enter you email address here...">
+                                                </div>
+                                                <div class="col-12 mb--20">
+                                                    <!-- <label for="password">Password</label> -->
+                                                    <input class="mb-0 form-control" type="password" id="login-password" placeholder="Enter your password">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <span><input type="checkbox" class="checkbox" name=""> Remeber Me</span> | <a href=""> <span class="ancher-click">Forgot Password ?</span></a>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <a href="#" class="btn btn--primary primaryBtn">Login</a>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <p>If you haven’t created your account yet, please <a href=""> <span class="ancher-click">SIGNUP HERE</span></a>.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
+                                
                             </div>
-                        </form>
-                    </div> -->
-
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="widget-social-share">
+                            <span class="widget-label">Share:</span>
+                            <div class="modal-social-share">
+                                <a href="#" class="single-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="single-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="single-icon"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="single-icon"><i class="fab fa-google-plus-g"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+
+
+          <!-- Modal -->
+        <div class="modal fade modal-quick-view lgoin-model" id="registration-model" tabindex="-1" role="dialog"
+            aria-labelledby="quickModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close modal-close-btn ml-auto" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="product-details-modal login-background-image">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <!-- <img src="image/bg-images/login_image.png"> -->
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <form action="#">
+                                        <div class="login-form">
+                                            <h4 class="login-title">Welcome! Signup here.</h4>
+                                            <p><span class="font-weight-bold">To signup please enter your details below.</span></p>
+                                            <div class="row">
+                                                <div class="col-md-12 col-12 mb--15">
+                                                    
+                                                    <input class="mb-0 form-control" type="text" id="name"
+                                                        placeholder="Enter your full name">
+                                                </div>
+                                                <div class="col-12 mb--20">
+                                                    
+                                                    <input class="mb-0 form-control" type="email" id="email" placeholder="Enter Your Email Address Here..">
+                                                </div>
+                                                <div class="col-lg-6 mb--20">
+                                                    
+                                                    <input class="mb-0 form-control" type="password" id="password" placeholder="Enter your password">
+                                                </div>
+                                                <div class="col-lg-6 mb--20">
+                                                    
+                                                    <input class="mb-0 form-control" type="password" id="repeat-password" placeholder="Repeat your password">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <a href="#" class="btn btn--primary primaryBtn">Register</a>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    If you already have an account, please <a href=""><span class="ancher-click">  CLICK HERE. </span></a>To reset password, please <a href=""> <span class="ancher-click">CLICK HERE</span></a>.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <div class="widget-social-share">
@@ -2668,7 +2715,20 @@
                     </div>
                 </div>
                 <div class=" col-xl-3 col-lg-4 col-sm-6">
-                    <div class="footer-title">
+                    <div class="newsletter-form-ontop">
+                        <div class="footer-title footer-title-newsletter">
+                            <h3>Newsletter Subscribe</h3>
+                        </div>
+
+                        <div class="newsletter-form mb--30">
+
+                            <form   action="https://demo.hasthemes.com/pustok-preview/pustok/php/mail.php">
+                                <input type="email" class="form-control form-control-newsletters" placeholder="Enter Your Email...">
+                                <button class="btn btn--primary"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="footer-title">
                         <h3>Newsletter Subscribe</h3>
                     </div>
                     <div class="newsletter-form mb--30">
@@ -2676,7 +2736,7 @@
                             <input type="email" class="form-control" placeholder="Enter Your Email Address Here...">
                             <button class="btn btn--primary w-100">Subscribe</button>
                         </form>
-                    </div>
+                    </div> -->
                     <div class="social-block">
                         <h3 class="title">STAY CONNECTED</h3>
                         <ul class="social-list list-inline">
@@ -2700,6 +2760,8 @@
             </div>
         </div>
     </footer>
+
+    
     <!-- Use Minified Plugins Version For Fast Page Load -->
     <script src="js/plugins.js"></script>
     <script src="js/ajax-mail.js"></script>
