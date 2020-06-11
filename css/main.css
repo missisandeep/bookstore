@@ -15584,11 +15584,11 @@ input[type="number"] {
 /*>>>>>>>> Products <<<<<<<<<*/
 /*++ Product Cards ++*/
 .product-card {
-  text-align: center;
+      text-align: center;
     padding: 15px;
     border: 1px dotted #66aaf7;
-    margin: 2px;
-    border-radius: 6px; }
+    margin: 16px;
+    border-radius: 6px;}
   .product-card .product-header {
     padding: 0 15px;
     min-height: 80px;
